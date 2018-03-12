@@ -1,0 +1,6 @@
+Assumptions:
+1. Student able to receive scholarship max. one at a time.
+2. Payment need Administrator approval to be able to be forwarded to the addressed Student.
+3. Active_Scholarship_Scheme able to held at most one interview in one day.
+4. Only system notification will be saved (e-mail notification doesn't).
+5. Notification included as announcement.
