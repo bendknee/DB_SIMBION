@@ -21,4 +21,5 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('beasiswa/daftar/', include('daftar_beasiswa.urls', namespace='daftar-beasiswa')),
     path('wawancara/', include('wawancara.urls', namespace='wawancara')),
+    path('pembayaran/', include('pembayaran.urls', namespace='pembayaran')),
 ]
