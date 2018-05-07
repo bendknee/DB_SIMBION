@@ -1,0 +1,28 @@
+{% extends "daftar_beasiswa/layout/base.html" %}
+{% block title %}Tempat Wawancara{% endblock %}
+
+{% block content %}
+<h1 class="main-title">Tempat Wawancara</h1>
+<hr/>
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Tanggal</th>
+        <th>Judul</th>
+        <th>Pembuat</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in pengumuman %}
+      <tr>
+        <td> {{i.tanggal}} </td>
+        <td> <a href="{{ forloop.counter0 }}">{{i.judul}}</a> </td>
+        <td> {{i.pembuat}} </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

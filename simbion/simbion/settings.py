@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'polls',
     'daftar_beasiswa',
     'wawancara',
-    'pembayaran'
+    'pembayaran',
+    'pengumuman'
 ]
 
 MIDDLEWARE = [
