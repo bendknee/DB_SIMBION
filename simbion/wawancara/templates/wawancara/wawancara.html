@@ -2,13 +2,13 @@
 {% block title %}Tempat Wawancara{% endblock %}
 
 {% block content %}
-<h1 class="main-title">Tambah Tempat Wawancara</h1>
+<h1 class="main-title">Tempat Wawancara</h1>
 <hr/>
 
-<section name="input-list" id="input-list">
-    <div class="container1">
-        <h2>Tempat Wawancara</h2>
+<section name="input-form" id="input-form">
+    <div class="container">
         <form id="form" method="POST" action="#">
+            <h2>Tambah Tempat Wawancara</h2>
             {% csrf_token %}
             {{ form_wawancara }}
             <br>
