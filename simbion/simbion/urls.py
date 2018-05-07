@@ -20,6 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
     path('beasiswa/daftar/', include('daftar_beasiswa.urls', namespace='daftar-beasiswa')),
+    path('beasiswa/lihat/', include('lihat_beasiswa.urls', namespace='lihat-beasiswa')),
     path('wawancara/', include('wawancara.urls', namespace='wawancara')),
     path('pembayaran/', include('pembayaran.urls', namespace='pembayaran')),
     path('pengumuman/', include('pengumuman.urls', namespace='pengumuman'))

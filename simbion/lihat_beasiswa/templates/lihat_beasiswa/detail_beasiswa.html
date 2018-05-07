@@ -1,0 +1,15 @@
+{% extends "lihat_beasiswa/layout/base.html" %}
+
+{% block content %}
+<div class="row">
+	<h1>{{ beasiswa.nama }} - {{ beasiswa.kode }}</h1>
+	<p>{{ beasiswa.jenis }} dibuat oleh {{ beasiswa.donatur }}</p>
+	<p>{{ beasiswa.deskripsi }}</p>
+	<p>Syarat Beasiswa : {{ beasiswa.syarat }}</p>
+
+	<hr>
+	<div class="box">
+		<a href="#">Daftar Beasiswa Ini</a>
+	</div>
+</div>
+{% endblock %}
