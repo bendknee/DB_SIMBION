@@ -6,9 +6,9 @@
 <section name="input-form" id="input-form">
     <div class="container">
         <form id="form" method="POST" action="#">
-            <h2>FORM PENDAFTARAN PAKET BEASISWA</h2>
+            <h2>FORM PENDAFTARAN TAMBAH BEASISWA DARI PAKET</h2>
             {% csrf_token %}
-            {{ daftar_beasiswa_form }}
+            {{ tambah_beasiswa_aktif_form }}
             <input id="submit" type="submit" class="btn btn-lg btn-block btn-info" value="Submit">
             <br>
         </form>

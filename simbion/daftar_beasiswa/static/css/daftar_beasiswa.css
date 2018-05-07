@@ -2,17 +2,67 @@
   margin-bottom: 19px;
 }
 .navbar-default .navbar-nav>li>a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 textarea {
-    resize:none
+  resize:none
 }
-section{
+
+section {
   min-height: 600px;
 }
 
-footer p{
+footer p {
   text-align: center;
   padding-top: 10px;
+}
+
+/* styling wrapper form */
+#input-form{
+  background: linear-gradient(to bottom right, #606062, #393939);
+}
+
+/* styling form */
+#input-form form {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* styling judul form */
+#input-form form > h2{
+  font-size: 1.24em;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+/* styling form input dan textarea */
+#input-form form > .form-textinput, #input-form form > .form-textarea, 
+#input-form form > .form-select, #input-form form > .form-select-date {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
+}
+
+/* styling responsive max-width menandakan bahwa rule css ini hanya akan bekerja untuk layar dengan maksimal 768px, jika lebih dari 768px maka rule ini diabaikan */
+@media only screen and (max-width: 768px) {
+  #input-form form {
+      width: 290px;
+  }
 }
