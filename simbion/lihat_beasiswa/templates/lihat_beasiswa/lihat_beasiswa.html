@@ -1,0 +1,26 @@
+{% extends "lihat_beasiswa/layout/base.html" %}
+
+{% block content %}
+<div id="beasiswa-list" class="table table-responsive">
+	<table id="beasiswa-table" class="table table-hover">
+		<thead>
+			<th>No</th>
+			<th>Nama Beasiswa</th>
+			<th>Waktu Tutup Pendaftaran</th>
+			<th>Status Beasiswa</th>
+			<th>Jumlah Pendaftar</th>
+		</thead>
+		<tbody>
+			{% for beasiswa in beasiswa_list %}
+			<tr>
+				<td>{{ beasiswa.no }}</td>
+				<td>{{ beasiswa.nama }}</td>
+				<td>{{ beasiswa.tanggal_tutup }}</td>
+				<td>{{ beasiswa.status }}</td>
+				<td>{{ beasiswa.jumlah_pendaftar }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endblock %}

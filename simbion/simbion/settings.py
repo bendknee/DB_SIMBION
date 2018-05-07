@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls',
     'daftar_beasiswa',
+    'lihat_beasiswa',
 ]
 
 MIDDLEWARE = [
