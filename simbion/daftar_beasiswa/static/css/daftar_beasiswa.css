@@ -5,6 +5,10 @@
   cursor: pointer;
 }
 
+.main-title {
+    padding-left: 40px;
+}
+
 textarea {
   resize:none
 }
@@ -49,7 +53,8 @@ footer p {
 
 /* styling form input dan textarea */
 #input-form form > .form-textinput, #input-form form > .form-textarea, 
-#input-form form > .form-select, #input-form form > .form-select-date {
+#input-form form > .form-select, #input-form form > .form-select-date,
+#input-form form > .form-numberinput {
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
